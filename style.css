@@ -1,0 +1,18 @@
+
+.init-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 204, 255);
+    height: 100vh;
+}
+
+.envelope {
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.envelope:hover {
+    transform: scale(1.1);
+}
