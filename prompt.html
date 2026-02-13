@@ -3,15 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>yes or no</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <div class="init-box">
-        test
+        <div>
+            <h1>Do u wanna be valentines yes or no?</h1>
+            <div class="buttons">
+                <button type="button" id="yes" class="">
+                    Yes
+                </button>
+                <div class="no-button-box">
+                    <button type="button" id="no">
+                        No
+                    </button>
+                </div>
+            </div>
+            <div id="spot-player">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5yr8pi3uCjTYOnTqstBBdm?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            
+            
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const no_button = document.getElementById('no');
+        no_button.addEventListener('mouseover', function() {
+            no_button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+            no_button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+        }); 
+        
+    </script>
+
+    <script>
+        document.getElementById('yes').addEventListener('click', function() {
+            const player = document.getElementById('spot-player');
+            player.style.display = 'block'
+            player.classList.add('animate__animated', 'animate__fadeIn');
+        })
+    </script>
 </body>
 </html>

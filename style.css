@@ -16,3 +16,42 @@
 .envelope:hover {
     transform: scale(1.1);
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+#yes {
+    background-color: green;
+    color: white;
+}
+
+#yes:hover {
+    background-color: darkgreen;
+}
+
+.no-button-box{
+    margin-right: 54px;
+}
+
+#no {
+    position: absolute;
+    transition: 0.5s;
+    background-color: red;
+    color: white;
+}
+
+#spot-player {
+    display: none;
+    margin-top: 15px;
+    transition: 2s;
+}
