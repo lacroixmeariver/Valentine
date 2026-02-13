@@ -6,12 +6,15 @@
     <title>yes or no</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="init-box">
         <div>
-            <h1>Do u wanna be valentines yes or no?</h1>
+            <h1 class="valentine_q">Do u wanna be valentines yes or no?</h1>
             <div class="buttons">
                 <button type="button" id="yes" class="">
                     Yes
@@ -25,7 +28,6 @@
             <div id="spot-player">
                 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5yr8pi3uCjTYOnTqstBBdm?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            
             
         </div>
     </div>
@@ -41,8 +43,7 @@
     <script>
         document.getElementById('yes').addEventListener('click', function() {
             const player = document.getElementById('spot-player');
-            player.style.display = 'block'
-            player.classList.add('animate__animated', 'animate__fadeIn');
+            player.style.opacity = 1;
         })
     </script>
 </body>

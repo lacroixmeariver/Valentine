@@ -1,8 +1,14 @@
 
+body {
+    font-family: "Silkscreen", sans-serif;
+}
+
 .init-box {
-    display: flex;
+    display: flex; 
+    text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 50px;
     background-color: rgb(241, 204, 255);
     height: 100vh;
 }
@@ -17,10 +23,14 @@
     transform: scale(1.1);
 }
 
+.valentine-q {
+    font-family: "pixel";
+}
+
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 100px;
 }
 
 button {
@@ -40,7 +50,7 @@ button {
 }
 
 .no-button-box{
-    margin-right: 54px;
+    margin-right: 10%;
 }
 
 #no {
@@ -51,7 +61,7 @@ button {
 }
 
 #spot-player {
-    display: none;
-    margin-top: 15px;
+    opacity: 0;
     transition: 2s;
+    margin: 20px 20% 0 20%;
 }
